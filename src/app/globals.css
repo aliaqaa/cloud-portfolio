@@ -1,26 +1,30 @@
-@import "tailwindcss";
+@import "tailwindcss";  
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@font-face {  
+  font-family: 'farmhouse';   
+  src: url('/assets/fonts/AfternoonFarmhouse.otf');  
+}  
+@font-face {  
+  font-family: 'farming';   
+  src: url('/assets/fonts/farming.otf');  
+}  
+@font-face {  
+  font-family: 'lucy';   
+  src: url('/assets/fonts/LUCYFARM.otf');  
+}  
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+body {  
+  background: linear-gradient(190deg, rgb(0, 179, 255) 0%, rgba(255, 255, 255, 1) 99%);  
+  color: black;  
+  font-family: 'farmhouse', 'farming', 'lucy'; 
+}  
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+.font-farmhouse {  
+  font-family: 'farmhouse';  
+}  
+.font-farming {  
+  font-family: 'farming';  
+}  
+.font-lucy {  
+  font-family: 'lucy';  
+}  
