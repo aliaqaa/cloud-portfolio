@@ -29,4 +29,54 @@ body {
 }  
 .font-lucy {  
   font-family: 'lucy';  
+  
+} 
+ 
+.glow {  
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.7),  
+              0 0 30px rgba(255, 255, 0, 0.5),  
+              0 0 40px rgba(255, 255, 0, 0.3);  
+}  
+@keyframes rotate {  
+  0% {
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+}  
+  25% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}  
+  50% {
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+}  
+  75% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}  
+  100% {
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+}  
+}  
+
+.rotating {
+  animation: rotate 1s forwards;
+  transform-origin: top;
+  -webkit-animation: rotate 1s forwards;
 }  
