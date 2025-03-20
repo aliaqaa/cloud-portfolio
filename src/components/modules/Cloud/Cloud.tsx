@@ -17,7 +17,6 @@ function Cloud({ dragConstraints, title, className }) {
   }, []);  
 
   // Function to generate a random number  
-  const randomX = () => Math.random() * 20 - 10; // Random value between -10 and 10  
 
   const handleClick = () => {  
     if (audioRef.current) {  

@@ -1,7 +1,6 @@
 "use client"; 
 import React, { useRef } from "react";  
 import Cloud from "../modules/Cloud/Cloud";  
-import mainItems from "@/mock/mainItems";
 import House from "../modules/house/House";
 import Ali from "../modules/Ali/Ali";
 function Landing() {  
